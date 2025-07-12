@@ -2,7 +2,7 @@
 
 Many little pieces of code to use with [Litecanvas](https://github.com/litecanvas/game-engine).
 
-## How hide mouse cursor
+## Hide mouse cursor
 
 ```js
 function init() {
