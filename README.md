@@ -1,6 +1,6 @@
 # Litecanvas Snippets
 
-Many little pieces of code to use with [Litecanvas](https://github.com/litecanvas/game-engine).
+Many useful pieces of code to use with [Litecanvas](https://github.com/litecanvas/game-engine).
 
 ## Hide mouse cursor
 
