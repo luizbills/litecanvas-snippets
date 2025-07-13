@@ -26,7 +26,7 @@ function mag(x, y) {
 }
 ```
 
-## Draw a grid (useful to test distance in tile-based games)
+## Draw a grid (useful in tile-based games)
 
 ```js
 function drawGrid(cellWidth = 32, cellHeight = 32, color = 4) {
