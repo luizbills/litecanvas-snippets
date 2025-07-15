@@ -26,10 +26,14 @@ function mag(x, y) {
 }
 ```
 
-## Draw a grid (useful in tile-based games)
+## Draw grid lines (useful in tile-based games)
 
 ```js
-function drawGrid(cellWidth = 32, cellHeight = 32, color = 4) {
+function draw() {
+  drawGridLines()
+}
+
+function drawGridLines(cellWidth = 32, cellHeight = 32, color = 4) {
   const cols = floor(W / cellWidth) + 1
   const rows = floor(H / cellHeight) + 1
 
@@ -43,4 +47,5 @@ function drawGrid(cellWidth = 32, cellHeight = 32, color = 4) {
 }
 ```
 
-[Live Demo](https://litecanvas.js.org?c=eJx1jr0OgyAUhXee4oxQTart1p%2B5voGzQawkBBKkdWh894JYNZpOHE6%2B%2B92rpBO80u%2Bqox8C9LJ27QXnU0YGRkjz0txJo1HbqqcMAQnxYWVNGRk2xFhzoVQZNLh7T4rwL4R8tu5XGGVsyNHHje5cKDvfNcoYS0scMWsYEuQzZ02%2FcMXERX0EPdl4PVXCQXoyv%2FrnNvp9SpK4FFBSCypxWBalyFJsmmI6l%2FmZ4Z873LR3r2TxvhTlvlrZhy%2FdwnRX)
+[Live Demo](https://litecanvas.js.org?c=eJx1jj0PgjAURff%2Biju2QiLo5scsgzszgaJNmjYpVQbDf%2FfVIhCMU19vT8%2B7WnlZV%2BZZdfzFgF41%2Fn7AfpexQTDWPkztlTVoXNVzgYCE8eJUc1VGdlywYYXNb7XUugxCnMmYItwLqW53%2Fw2sti7M0Vxb0%2FkQdpS12lrHS2wxaQQS5BPnbD9zxchFfQSJbEnPtfRQROZHOk4fP01JEpcCmspyhc28KEWWYpUUY11Bf4Z%2F7tDp172QxX4pyt9oYR%2Fe4Ch4TQ%3D%3D)
+
