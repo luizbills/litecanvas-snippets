@@ -30,10 +30,12 @@ function mag(x, y) {
 
 ```js
 function draw() {
+  cls(0)
+
   drawGridLines()
 }
 
-function drawGridLines(cellWidth = 32, cellHeight = 32, color = 4) {
+function drawGridLines(cellWidth = 32, cellHeight = 32, color = 3) {
   const cols = floor(W / cellWidth) + 1
   const rows = floor(H / cellHeight) + 1
 
