@@ -51,7 +51,7 @@ function drawGridLines(cellWidth = 32, cellHeight = 32, color = 3) {
 
 > **Note**: use `translate()` to draw the grid lines with an offset.
 
-[Live Demo](https://litecanvas.js.org?c=eJx1jj0PgjAURff%2Biju2QiLo5scsgzszgaJNmjYpVQbDf%2FfVIhCMU19vT8%2B7WnlZV%2BZZdfzFgF41%2Fn7AfpexQTDWPkztlTVoXNVzgYCE8eJUc1VGdlywYYXNb7XUugxCnMmYItwLqW53%2Fw2sti7M0Vxb0%2FkQdpS12lrHS2wxaQQS5BPnbD9zxchFfQSJbEnPtfRQROZHOk4fP01JEpcCmspyhc28KEWWYpUUY11Bf4Z%2F7tDp172QxX4pyt9oYR%2Fe4Ch4TQ%3D%3D)
+[Live Demo](https://litecanvas.js.org?c=eJx1kD0PwiAURXd%2BxR3BNrHq5sdsB%2FfODaWWhEACaAfT%2F%2B7DVmtsnHhcTs67weioZG3vdeAPBvS6id0eu23BBsFYe7MyamfR%2BLrnAgmRJvBC0JCys9fNRVsVuGDDDz%2B%2FSWVMlcw4kTpHupdKX7v4DpxxPs3TCmdDTGGgrDXOeV5hjY9GIMPmw3nXz1w5caN%2BBIlsSc%2BNitBEbg50HF9%2BmrJsXAoYKss1VvOiHEWOn6Sc6qYvGP65U6el%2B0s29stRLaMv%2B%2FAEUXd6Wg%3D%3D)
 
 ## Quick way to make time based events
 
