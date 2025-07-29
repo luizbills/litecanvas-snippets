@@ -60,6 +60,7 @@ For time-based events, I recommend using the [Timers plugin](https://github.com/
 ```js
 // you need declare a variable for each event
 let nextTime = 0
+
 function update(dt) {
   if (T >= nextTime) {
     nextTime = T + 5
