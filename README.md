@@ -58,7 +58,7 @@ function drawGridLines(cellWidth = 32, cellHeight = 32, color = 3) {
 For time-based events, I recommend using the [Timers plugin](https://github.com/litecanvas/plugin-timers) plugin. But for quick tests, you can use one of these two techniques.
 
 ```js
- // you need declare a timer for each event
+ // you need declare a variable for each event
 let nextTime = 0
 function update(dt) {
   if (T >= nextTime) {
