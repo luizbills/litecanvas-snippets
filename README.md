@@ -55,12 +55,26 @@ function drawGridLines(cellWidth = 32, cellHeight = 32, color = 3) {
 
 ## Quick way to make time based events
 
+For time-based events, I recommend using the [Timers plugin](https://github.com/litecanvas/plugin-timers) plugin. But for quick tests, you can use one of these two techniques.
+
 ```js
+ // you need declare a timer for each event
+let nextTime = 0
 function update(dt) {
-  if (T % 5 < dt) {
-    // example: do something every 5 seconds
+  if (T >= nextTime) {
+    nextTime = T + 5
+    // do something every 5 seconds
   }
 }
 ```
 
-> **Note**: That's not very accurate. Use it only as a quick way to test something. For anything else, use the [Timers plugin](https://github.com/litecanvas/plugin-timers).
+```js
+// without variables, but not accurate
+function update(dt) {
+  if (T % 5 < dt) {
+    // do something every 5 seconds
+  }
+}
+```
+
+> **Note**: That second snippet is not very accurate.
