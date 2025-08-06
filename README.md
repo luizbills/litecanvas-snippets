@@ -80,6 +80,8 @@ function update(dt) {
 
 ## Enable MX/MY (mouse cursor coordinates) in mobile
 
+By default, `MX` and `MY` is `-1` until the mouse moves (something that doesn't usually happen on mobile devices).
+
 ```
 litecanvas()
 
