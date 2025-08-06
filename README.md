@@ -92,8 +92,18 @@ function draw() {
 
 function tapped (x, y, touchId) {
   if (touchId > 0) {
-    def('MX', x)
-    def('MY', y)
+    updateMouse(x, y)
   }
+}
+
+function tapping (x, y, touchId) {
+  if (touchId > 0) {
+    updateMouse(x, y)
+  }
+}
+
+function updateMouse(x, y) {
+  def('MX', x)
+  def('MY', y)
 }
 ```
