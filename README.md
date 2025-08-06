@@ -82,7 +82,7 @@ function update(dt) {
 
 By default, `MX` and `MY` is `-1` until the mouse moves (something that doesn't usually happen on mobile devices).
 
-```
+```js
 litecanvas()
 
 function draw() {
