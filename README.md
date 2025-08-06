@@ -77,3 +77,21 @@ function update(dt) {
   }
 }
 ```
+
+## Enable MX/MY (mouse cursor coordinates) in mobile
+
+```
+litecanvas()
+
+function draw() {
+  cls(0)
+  circfill(MX, MY, 8, 4)
+}
+
+function tapped (x, y, touchId) {
+  if (touchId > 0) {
+    def('MX', x)
+    def('MY', y)
+  }
+}
+```
