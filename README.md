@@ -22,7 +22,7 @@ function dist(x1, y1, x2, y2) {
 
 ```js
 function mag(x, y) {
-  return return Math.sqrt(x**2 + y**2)
+  return Math.sqrt(x**2 + y**2)
 }
 ```
 
