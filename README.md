@@ -14,7 +14,7 @@ function init() {
 
 ```js
 function dist(x1, y1, x2, y2) {
-  return Math.hypot(x2 - x1, y2 - y1)
+  return Math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 }
 ```
 
@@ -22,7 +22,7 @@ function dist(x1, y1, x2, y2) {
 
 ```js
 function mag(x, y) {
-  return Math.hypot(x, y);
+  return return Math.sqrt(x**2 + y**2)
 }
 ```
 
