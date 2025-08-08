@@ -105,3 +105,30 @@ function updateMouse(x, y) {
   def('MY', y)
 }
 ```
+
+## Simple 2D topdown (4-way) movement
+
+```js
+let x, y, speed
+
+litecanvas()
+
+function init() {
+  x = W/2
+  y = H/2
+  speed = 250
+}
+
+function update(dt) {
+  // use the ARROWS keys to move
+  x += speed * dt * (iskeydown('ArrowRight') - iskeydown('ArrowLeft'))
+  y += speed * dt * (iskeydown('ArrowDown') - iskeydown('ArrowUp'))
+}
+
+function draw() {
+  cls(0)
+  rectfill(x, y, 32, 32, 4)
+}
+```
+
+> Note: With this code moving moving diagonally will always be more faster (search for "normalize 2d movement" to fix this). But this might not be a big deal in small games or prototypes.
