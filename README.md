@@ -18,6 +18,8 @@ function dist(x1, y1, x2, y2) {
 }
 ```
 
+> See: [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
+
 ## The magnitude, or length, of a vector
 
 ```js
