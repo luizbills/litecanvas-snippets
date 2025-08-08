@@ -215,3 +215,21 @@ function draw() {
   spr(40, 40, 3, 4, spriteA)
 }
 ```
+
+## Pixels Manipulation
+
+Similar to p5.js' [loadPixels](https://p5js.org/reference/p5/loadPixels/).
+
+```js
+let pixels = null
+
+function loadPixels() {
+  const imageData = ctx().getImageData(0, 0, W, H);
+  pixels = imageData.data
+  pixels.parent = imageData
+}
+
+function updatePixels() {
+  ctx().putImageData(pixels.parent, 0, 0);
+}
+```
