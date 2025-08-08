@@ -138,7 +138,7 @@ function draw() {
 ```js
 // the camera' snippets function
 function camera(x, y) {
-  translate(W/2 -x , H/2 - y)
+  translate(W/2 - x , H/2 - y)
 }
 
 // usage example
