@@ -132,3 +132,60 @@ function draw() {
 ```
 
 > Note: With this code moving moving diagonally will always be more faster (search for "normalize 2d movement" to fix this). But this might not be a big deal in small games or prototypes.
+
+## Simple Camera
+
+```js
+// the camera' snippets function
+function camera(x, y) {
+  translate(W/2 -x , H/2 - y)
+}
+
+// usage example
+litecanvas()
+
+let objs = [],
+  player = {x: 0, y: 0}
+
+function init() {
+  // lets create map objects
+  for (let i = 0; i < 20; i++) {
+    objs.push({x: rand(-W, W), y: rand(-H, H)})
+  }
+  player = {x: W/2, y: H/2}
+}
+
+function update(dt) {
+  // move the player with WASD keys
+  player.x += 200 * dt * (iskeydown('D') - iskeydown('A'))
+  player.y += 200 * dt * (iskeydown('S') - iskeydown('W'))
+}
+
+function tapped(tx, ty) {
+  // tap to teleport the player
+  player.x = tx - W/2 + player.x
+  player.y = ty - H/2 + player.y
+}
+
+function draw() {
+  cls(0)
+
+  push()
+  // make the camera follows the player
+  camera(player.x, player.y)
+
+  // draw the map objects (green rects)
+  for (const o of objs) {
+    rectfill(o.x, o.y, 128, 128, 8)
+  }
+
+  // draw the player (red circle)
+  circfill(player.x, player.y, 32, 4)
+  pop()
+
+  // draw all UI after the pop()
+  text(10, 10, `Time: ${round(T,1)}`)
+}
+```
+
+> Note: for a more complete camera (which zooms, shakes, rotates, etc) use the camera module of https://github.com/litecanvas/utils
