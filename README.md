@@ -189,3 +189,33 @@ function draw() {
 ```
 
 > Note: for a more complete camera (which zooms, shakes, rotates, etc) use the camera module of https://github.com/litecanvas/utils
+
+## Improve `spr()` performance
+
+The `spr()` function draws a sprite pixel by pixel and this can hurt your game's performance if you decide to draw a lot of sprites this way.
+
+One solution is to use paint to create images of your sprites:
+
+```js
+litecanvas({ width: 128 })
+
+// a 3x4 sprite of the letter "A"
+let spriteA = `
+  .3.
+  3.3
+  333
+  3.3`
+
+// first create the sprite image
+let imageA = paint(3, 4, () => spr(0, 0, 3, 4, spriteA))
+
+function draw() {
+  cls(0)
+
+  // now draw the sprite with image()
+  image(0, 0, imageA)
+
+  // but you can still draw with spr()
+  spr(40, 40, 3, 4, spriteA)
+}
+```
