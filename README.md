@@ -161,12 +161,6 @@ function update(dt) {
   player.y += 200 * dt * (iskeydown('S') - iskeydown('W'))
 }
 
-function tapped(tx, ty) {
-  // tap to teleport the player
-  player.x = tx - W/2 + player.x
-  player.y = ty - H/2 + player.y
-}
-
 function draw() {
   cls(0)
 
