@@ -220,6 +220,8 @@ function draw() {
 
 Similar to p5.js' [loadPixels](https://p5js.org/reference/p5/loadPixels/).
 
+See also: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas
+
 ```js
 let pixels = null
 
