@@ -216,6 +216,8 @@ function draw() {
 }
 ```
 
+Another solution is this [experimental plugin](https://gist.github.com/luizbills/2563eeb2350133e477391c9f51c02c25).
+
 ## Pixels Manipulation
 
 Similar to p5.js' [loadPixels](https://p5js.org/reference/p5/loadPixels/).
