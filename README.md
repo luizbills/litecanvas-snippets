@@ -237,3 +237,22 @@ function updatePixels() {
   ctx().putImageData(pixels.parent, 0, 0);
 }
 ```
+
+## Center the game canvas (without autoscale)
+
+```js
+litecanvas({
+  width: 320,
+  height: 240,
+  autoscale: false
+})
+
+function init() {
+  canvas().parentNode.style = 'width:100vw; height:100vh; display:grid; place-items:center;'
+}
+
+function draw() {
+  circfill(MX,MY,32,3)
+  stroke(1)
+}
+```
