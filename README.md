@@ -13,9 +13,7 @@ function init() {
 ## The distance between two points
 
 ```js
-function dist(x1, y1, x2, y2) {
-  return Math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-}
+const mydist1 = Math.hypot(x2 - x1, y2 - y1)
 ```
 
 > See: [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
@@ -23,9 +21,7 @@ function dist(x1, y1, x2, y2) {
 ## The magnitude, or length, of a vector
 
 ```js
-function mag(x, y) {
-  return Math.sqrt(x**2 + y**2)
-}
+const mymag1 = Math.hypot(x, y)
 ```
 
 ## Draw grid lines (useful in tile-based games)
@@ -254,5 +250,29 @@ function init() {
 function draw() {
   circfill(MX,MY,32,3)
   stroke(1)
+}
+```
+
+## Draw a star
+
+```js
+litecanvas()
+
+function draw() {
+  cls(0)
+  starfill(W/2, H/2, 64, 3)
+}
+
+function starfill (x, y, r, color) {
+  const a = TWO_PI/10
+  const ps = []
+  for (let i = 0; i < 10; i++) {
+    const aa = a*i-PI/2
+    const rr = i % 2 ? r/2.5 : r
+    ps.push(x + rr * cos(aa))
+    ps.push(y + rr * sin(aa))
+  }
+  shape(ps)
+  fill(color)
 }
 ```
