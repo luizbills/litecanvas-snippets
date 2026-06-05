@@ -264,7 +264,7 @@ function draw() {
 }
 
 function starfill (x, y, r, color) {
-  const a = TWO_PI/10
+  const a = TAU/10
   const ps = []
   for (let i = 0; i < 10; i++) {
     const aa = a*i-PI/2
