@@ -134,7 +134,7 @@ function draw() {
 ## Simple Camera
 
 ```js
-// the camera' snippet
+// the camera snippet
 function camera(x, y) {
   translate(W/2 - x , H/2 - y)
 }
@@ -208,7 +208,7 @@ function draw() {
   image(0, 0, imageA)
 
   // but you can still draw with spr()
-  spr(40, 40, 3, 4, spriteA)
+  spr(40, 40, spriteA)
 }
 ```
 
