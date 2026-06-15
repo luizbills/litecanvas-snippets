@@ -199,7 +199,7 @@ let spriteA = `
   3.3`
 
 // first create the sprite image
-let imageA = paint(3, 4, () => spr(0, 0, 3, 4, spriteA))
+let imageA = paint(3, 4, () => spr(0, 0, spriteA))
 
 function draw() {
   cls(0)
